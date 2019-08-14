@@ -11,7 +11,7 @@
 
     virtualenv www
     cd www
-    source bin/active
+    source bin/activate
 
 下載程式碼 :
     
