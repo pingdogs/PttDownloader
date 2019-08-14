@@ -1,0 +1,40 @@
+body{
+	margin:0px;
+	background-color: black;
+}
+
+ul{
+	color:white;
+}
+#main-view{
+	display:flex;
+}
+p{
+	color:white;
+}
+a{
+	text-decoration:none;
+}
+
+a:link{
+	color:#ffffff;
+}
+a:visited {
+	color:#ffffff;
+}
+
+a:hover {
+	background-color:#fafafa;
+	color:gray;
+}
+a:active {
+	background-color:gray;
+	color:#fafafa;
+}
+
+.article{
+	margin:50px;
+}
+.article_detail{
+	font-size:20px;
+}

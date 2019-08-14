@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+		PTT
+{% endblock %}
+
+{% block content %}
+<div id='main-view'>
+	<ul>
+		<p> 看板分類 </p>
+		<a href="../../"> <li> All </li> </a>
+		{% for category in categories %}
+			<a href="../../category/{{category.id}}/"><li> {{category.name}} </li></a>
+		{% endfor %}
+
+		<p> 關鍵字分類 </p>
+		{% for key in keys %}
+			<a href="../../key/{{key.id}}/"><li> {{key.name}} </li></a>
+		{% endfor %}
+
+	</ul>
+
+	<div class='article'>
+		<ul>
+			{% for article in articles %}
+				<a href="../../detail/{{article.id}}"><li> {{article.title}} </li></a>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+{% endblock %}

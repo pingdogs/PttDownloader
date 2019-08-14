@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+	{% if article %}
+		{{article.title}}
+	{% else %}
+		PTT
+	{% endif %}
+{% endblock %}
+
+{% block content %}
+	<div class='article_detail'>
+		<p>{{article.content |linebreaksbr }}</p>
+	</div>
+{% endblock %}
