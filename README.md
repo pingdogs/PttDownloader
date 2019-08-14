@@ -1,7 +1,7 @@
 # PttDownloader
 # 預覽畫面
 ![首页](https://github.com/skyjan0428/PttDownloader/blob/master/static/images/home.png)
-![文章畫面](http://vmaig.qiniudn.com/screenshot/detail.jpg)
+![文章畫面](https://github.com/skyjan0428/PttDownloader/blob/master/static/images/detail.png)
 # 安装運行程式
 安装virtualenv :
 
