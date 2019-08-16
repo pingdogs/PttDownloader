@@ -5,7 +5,7 @@
 ![首页](https://github.com/skyjan0428/PttDownloader/blob/master/static/images/home.png)
 ![文章畫面](https://github.com/skyjan0428/PttDownloader/blob/master/static/images/article_content.png)
 
-Demo網址: http://13.72.110.87/
+Demo網址: http://23.102.232.247/
 
 # 安装運行程式
 安装virtualenv :
@@ -40,14 +40,45 @@ Demo網址: http://13.72.110.87/
     
     python manage.py runserver
     
+新增每小時執行爬蟲任務
+
+python3 manage.py crontab add
 
 新增Super User :
-    
+   
     python manage.py createsuperuser
     
-
+```
 	
 啟動server後，请登录 http://your-domain/admin，帳密是剛剛新增的Super User帳號密碼                   
+
+```
+
+#Docker 安裝方式
+
+下載Docker Image檔案:
+
+docker pull skyjan0428/pttdownloader
+
+執行Docker Image skyjan0428/pttdownloader 命名為pttdownloader
+
+docker run -it --name pttdownloader -p 80:80 -d skyjan0428/pttdownloader /bin/bash
+
+啟動nginx server
+
+sudo docker exec pttdownloader service nginx start
+
+新增每小時執行爬蟲任務
+
+sudo docker exec pttdownloader python3 /PttDownloader/manage.py crontab add
+
+啟動django server
+
+sudo docker exec pttdownloader python3 /PttDownloader/manage.py runserver
+
+開啟 http://127.0.0.1:8000/ 首頁
+
+```
 
 # 接下来該做什麼？
 在瀏覽器輸入 http://127.0.0.1:8000/admin  
@@ -58,7 +89,6 @@ Demo網址: http://13.72.110.87/
 通過“Articles” 查看和操作下載好的文章
 
 Settings.py 可以設定要多久下載一次文章
-
 
 
 
