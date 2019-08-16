@@ -41,7 +41,7 @@ Demo網址: http://23.102.232.247/
     
 #新增每小時執行爬蟲任務
 
-python3 manage.py crontab add
+    python3 manage.py crontab add
 
 #新增Super User :
    
@@ -57,23 +57,23 @@ python3 manage.py crontab add
 
 #下載Docker Image檔案:
 
-docker pull skyjan0428/pttdownloader
+	docker pull skyjan0428/pttdownloader
 
 #執行Docker Image skyjan0428/pttdownloader 命名為pttdownloader
 
-docker run -it --name pttdownloader -p 80:80 -d skyjan0428/pttdownloader /bin/bash
+	docker run -it --name pttdownloader -p 80:80 -d skyjan0428/pttdownloader /bin/bash
 
 #啟動nginx server
 
-sudo docker exec pttdownloader service nginx start
+	docker exec pttdownloader service nginx start
 
 #新增每小時執行爬蟲任務
 
-sudo docker exec pttdownloader python3 /PttDownloader/manage.py crontab add
+	docker exec pttdownloader python3 /PttDownloader/manage.py crontab add
 
 #啟動django server
 
-sudo docker exec pttdownloader python3 /PttDownloader/manage.py runserver
+	docker exec pttdownloader python3 /PttDownloader/manage.py runserver
 
 #開啟 http://127.0.0.1:8000/ 首頁
 
