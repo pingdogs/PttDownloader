@@ -28,7 +28,6 @@ Demo網址: http://23.102.232.247/
     pip install -r requirements.txt
 
 
-```
 
 #初始化資料庫 :
 
@@ -48,11 +47,11 @@ python3 manage.py crontab add
    
     python manage.py createsuperuser
     
-```
+
 	
 #啟動server後，请登录 http://your-domain/admin，帳密是剛剛新增的Super User帳號密碼                   
 
-```
+
 
 #Docker 安裝方式
 
@@ -78,7 +77,7 @@ sudo docker exec pttdownloader python3 /PttDownloader/manage.py runserver
 
 #開啟 http://127.0.0.1:8000/ 首頁
 
-```
+
 
 # 接下来該做什麼？
 在瀏覽器輸入 http://127.0.0.1:8000/admin  
