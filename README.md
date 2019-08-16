@@ -49,7 +49,7 @@ Demo網址: http://23.102.232.247/
     
 
 	
-啟動server後，请登录 http://your-domain/admin，帳密是剛剛新增的Super User帳號密碼                   
+啟動server後，请登录 http://your-domain/admin 帳密是剛剛新增的Super User帳號密碼                   
 
 
 
