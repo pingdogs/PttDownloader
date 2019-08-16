@@ -30,53 +30,53 @@ Demo網址: http://23.102.232.247/
 
 ```
 
-初始化資料庫 :
+#初始化資料庫 :
 
     python manage.py makemigrations
     python manage.py migrate
     python manage.py createsuperuser
     
-啟動server :
+#啟動server :
     
     python manage.py runserver
     
-新增每小時執行爬蟲任務
+#新增每小時執行爬蟲任務
 
 python3 manage.py crontab add
 
-新增Super User :
+#新增Super User :
    
     python manage.py createsuperuser
     
 ```
 	
-啟動server後，请登录 http://your-domain/admin，帳密是剛剛新增的Super User帳號密碼                   
+#啟動server後，请登录 http://your-domain/admin，帳密是剛剛新增的Super User帳號密碼                   
 
 ```
 
 #Docker 安裝方式
 
-下載Docker Image檔案:
+#下載Docker Image檔案:
 
 docker pull skyjan0428/pttdownloader
 
-執行Docker Image skyjan0428/pttdownloader 命名為pttdownloader
+#執行Docker Image skyjan0428/pttdownloader 命名為pttdownloader
 
 docker run -it --name pttdownloader -p 80:80 -d skyjan0428/pttdownloader /bin/bash
 
-啟動nginx server
+#啟動nginx server
 
 sudo docker exec pttdownloader service nginx start
 
-新增每小時執行爬蟲任務
+#新增每小時執行爬蟲任務
 
 sudo docker exec pttdownloader python3 /PttDownloader/manage.py crontab add
 
-啟動django server
+#啟動django server
 
 sudo docker exec pttdownloader python3 /PttDownloader/manage.py runserver
 
-開啟 http://127.0.0.1:8000/ 首頁
+#開啟 http://127.0.0.1:8000/ 首頁
 
 ```
 
@@ -87,7 +87,6 @@ sudo docker exec pttdownloader python3 /PttDownloader/manage.py runserver
 通過“Categories”新增要搜尋的看板
 通過“Key Words”新增關鍵字搜尋
 通過“Articles” 查看和操作下載好的文章
-
 Settings.py 可以設定要多久下載一次文章
 
 
