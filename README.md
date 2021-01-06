@@ -5,7 +5,6 @@
 ![首页](https://github.com/skyjan0428/PttDownloader/blob/master/static/images/home.png)
 ![文章畫面](https://github.com/skyjan0428/PttDownloader/blob/master/static/images/article_content.png)
 
-Demo網址: http://23.102.232.247/
 
 # 安装運行程式
 安装virtualenv :
