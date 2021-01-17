@@ -2,8 +2,8 @@
 功能: PttDownloader會依照關鍵字去相應的看板去抓有關鍵字出現的文章並存到資料庫，預設是每小時抓一次，每次每個關鍵字去對應的看板上找最新的200則文章比對，若出現關鍵字則保留，若為上次重複文章則更新內文。
 
 # 預覽畫面
-![首页](https://github.com/skyjan0428/PttDownloader/blob/master/static/images/home.png)
-![文章畫面](https://github.com/skyjan0428/PttDownloader/blob/master/static/images/article_content.png)
+![首页](https://github.com/pingdogs/PttDownloader/blob/master/static/images/home.png)
+![文章畫面](https://github.com/pingdogs/PttDownloader/blob/master/static/images/article_content.png)
 
 
 # 安装運行程式
